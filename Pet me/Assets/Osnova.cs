@@ -10,7 +10,7 @@ public class Osnova : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Head= 0;// head 
+        Head= 0;// head ffff
     }
 
     // Update is called once per frame
