@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Kiwi : MonoBehaviour
+public class Kiwi : Ihead
 {
-    // Start is called before the first frame update
-    void Start()
+    public HpStat hpStat;
+   
+    public void life()
     {
-        
-    }
+        GameObject player3 = GameObject.FindWithTag("Îsnova");
+        hpStat = player3.GetComponent<HpStat>();
+        Debug.Log(hpStat.Head);
+        Debug.Log("Kiwi ");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        hpStat.Head += 3;
+        Debug.Log(hpStat.Head);
+        if (hpStat.Head > 100)
+        {
+            hpStat.Head = 100;
+        }
     }
 }

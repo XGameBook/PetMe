@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class chudik1 : MonoBehaviour
 {
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,17 +14,5 @@ public class Player : MonoBehaviour
     void Update()
     {
         
-    }
-}
-public class Plaeer1 : MonoBehaviour
-{
-    public Ihead h1;
-    Plaeer1(Ihead h2)
-    {
-        h1 = h2;
-    }
-    public void realiz()
-    {
-        h1.life();
     }
 }

@@ -1,10 +1,15 @@
-using System.Collections;
+
+
+//public interface Ibar
+//{
+//  void bar();
+//}
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class IPers : MonoBehaviour
-{
-    public float hp;
-}
+using UnityEngine.UI;
+*/
+
 
 public interface Ihead
 {
@@ -13,10 +18,9 @@ public interface Ihead
 
 public interface IWeapons
 {
-    void Weapons();
+    void Weapons(); 
 }
-
 public interface Ipet
 {
     void pet();
-}  
+}

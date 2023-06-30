@@ -2,13 +2,21 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class banana : MonoBehaviour, Ihead
+using Zenject;
+public class banana : Ihead
 {
-   
-    public void Weapons()
+    public HpStat hpStat;
+    public void life()
     {
-        int hp = 1;
+        GameObject player3 = GameObject.FindWithTag("Îsnova");
+        hpStat = player3.GetComponent<HpStat>();
+        Debug.Log("banana");
+        Debug.Log(hpStat.Head);
+        hpStat.Head += 4;
+        if (hpStat.Head > 100)
+        {
+            hpStat.Head = 100;
+        }
     }
-
 }
+
